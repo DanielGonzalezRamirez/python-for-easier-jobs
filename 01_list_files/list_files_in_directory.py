@@ -43,6 +43,7 @@ if __name__ == '__main__':
     root.withdraw()
     directory = filedialog.askdirectory(parent=root, initialdir=os.getcwd())
     dir_name = os.path.basename(directory)
+    root.destroy()
 
     # Generates the file with a list of the name of the files in the directory
     title = 'Lista_' + dir_name
